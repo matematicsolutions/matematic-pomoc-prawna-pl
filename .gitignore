@@ -1,0 +1,6 @@
+# OS / edytory
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

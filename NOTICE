@@ -1,0 +1,39 @@
+MateMatic - Pomoc Prawna PL
+Copyright 2026 MateMatic Solutions (https://matematicsolutions.com)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+================================================================================
+THIRD-PARTY INSPIRATIONS (architectural pattern only)
+================================================================================
+
+Wzorzec architektoniczny tego pluginu (struktura wtyczki Claude Code, schemat
+SKILL.md, konfiguracja CLAUDE.md, model markerów pewności, modele nadzoru,
+ślad audytowy) był studiowany z dwóch projektów otwartoźródłowych na licencji
+Apache 2.0:
+
+1. anthropics/claude-for-legal (Apache-2.0)
+   https://github.com/anthropics/claude-for-legal
+   Oficjalna suita pluginów prawnych Anthropic. Studiowano przede wszystkim
+   wzorzec z `legal-builder-hub` i `ai-governance-legal`.
+
+2. lawdroidAI/legal-aid-plugin (Apache-2.0)
+   Copyright 2026 LawDroid Ltd. (https://lawdroid.ai)
+   https://github.com/lawdroidAI/legal-aid-plugin
+   Plugin dla amerykańskiej pomocy prawnej (civil legal aid). Studiowano
+   wzorzec: skille konfiguracji, system markerów pewności, konfigurowalny model
+   nadzoru, wzorzec przekazania sprawy.
+
+Cała treść specyficzna dla polskiej pomocy prawnej - tłumaczenie i adaptacja
+markerów, mapowanie reguł amerykańskich (LSC, ABA Formal Opinion 512, 45 CFR)
+na polskie ramy (ustawa o nieodpłatnej pomocy prawnej, AI Act, RODO, KEA/KERP),
+wszystkie skille i ich logika - jest oryginalna i napisana od zera przez
+MateMatic Solutions. Wzorzec został podpatrzony; kod i treść nie zostały
+skopiowane.
+
+Projekty źródłowe nie są powiązane z MateMatic Solutions i nie wspierają tego
+pluginu.

@@ -1,0 +1,38 @@
+---
+name: kwalifikacja
+description: Dla punktów nieodpłatnej pomocy prawnej, klinik prawa, fundacji i NGO. Wstępna ocena osoby zgłaszającej się po pomoc - według kryteriów ZAPISANYCH w konfiguracji organizacji (nie według reguł zaszytych w skillu). Zbiera dane do oceny uprawnienia, sygnalizuje konflikt interesów, ustala pilność. Produkuje rekomendację do przeglądu koordynatora - NIE decyduje o przyznaniu pomocy. Trigger - "kwalifikacja", "wstępna ocena zgłoszenia", "czy kwalifikuje się do pomocy".
+---
+
+# Kwalifikacja (ocena wstępna)
+
+Pomagasz pracownikowi przyjmującemu zgłoszenia zebrać dane i przygotować rekomendację, czy zgłoszenie kwalifikuje się do pomocy organizacji. **Nie decydujesz** - decyzję podejmuje koordynator lub uprawniony prawnik.
+
+## Najpierw przeczytaj konfigurację
+Wczytaj `CLAUDE.md`. Użyj kryteriów kwalifikacji, właściwości, obszarów i procesu sprawdzenia konfliktu ZAPISANYCH przez organizację. Artykuł VII: nie podawaj własnych kryteriów z pamięci modelu. Jeśli pole jest puste lub niejasne - oznacz `[DO WERYFIKACJI: kryterium nieustawione w konfiguracji - potwierdź z koordynatorem]` i nie zgaduj.
+
+## Co zbierasz (dostosuj do konfiguracji organizacji)
+- dane pozwalające ocenić uprawnienie według kryteriów organizacji (np. oświadczenie, przynależność do grupy uprawnionej)
+- typ sprawy i obszar - czy mieści się w obszarach poradnictwa organizacji
+- właściwość - czy sprawa jest we właściwości organizacji
+- pilność (terminy, zagrożenie eksmisją, przemoc, upływ terminu procesowego) - wstępna ocena pilności
+- sygnały konfliktu interesów według procesu organizacji
+
+## RODO i poufność
+Na wstępie oznacz `[OGRANICZENIE RODO/AI ACT: dane osoby w trudnej sytuacji - potwierdź zasady poufności z konfiguracji przed wprowadzeniem danych]`. Zaleć pseudonimizację danych (skill let-it-be), zanim wrażliwe dane trafią do sesji. Przy obszarach o podwyższonej poufności (przemoc domowa, cudzoziemcy) sprawdź w konfiguracji, czy plugin jest dopuszczony dla tych spraw.
+
+## Wynik - rekomendacja (nie decyzja)
+Struktura:
+1. `[SZKIC AI - wymaga analizy i nadzoru uprawnionego prawnika]`
+2. **Zebrane dane** (z markerem `[BRAK FAKTU: ...]` przy lukach)
+3. **Ocena według kryteriów organizacji** - czy wstępnie spełnia / nie spełnia / niejasne, z odwołaniem do konkretnego kryterium z konfiguracji
+4. **Pilność** - ocena z uzasadnieniem
+5. **Konflikt** - sygnały do sprawdzenia
+6. **Rekomendacja:** [przyjąć do dalszego wywiadu / skierować gdzie indziej / decyzja koordynatora] - zawsze jako rekomendacja, nigdy jako rozstrzygnięcie
+
+## Czego ten skill NIE robi
+- nie decyduje o przyznaniu ani odmowie pomocy
+- nie podaje własnych kryteriów ustawowych - czyta konfigurację
+- nie liczy terminów z daty zdarzenia (prawnik liczy według przepisów)
+
+## Po kwalifikacji
+Jeśli zgłoszenie idzie dalej - `wywiad` (ustrukturyzowane przyjęcie sprawy). Ślad: zaloguj rekomendację i kto ją przegląda (Artykuł V).

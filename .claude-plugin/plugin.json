@@ -1,0 +1,23 @@
+{
+  "name": "pomoc-prawna",
+  "version": "0.1.0",
+  "description": "Open-source asystent Claude Code dla polskiej nieodplatnej pomocy prawnej, klinik prawa, fundacji i NGO. Przyspiesza prace wokol poradnictwa (kwalifikacja, wywiad, projekt pisma, memo) - nie zastepuje prawnika. Kazdy output to draft do weryfikacji i nadzoru. MateMatic dostarcza narzedzie, nie usluge prawna.",
+  "author": {
+    "name": "MateMatic Solutions",
+    "url": "https://matematicsolutions.com"
+  },
+  "homepage": "https://github.com/matematicsolutions/matematic-pomoc-prawna-pl",
+  "license": "Apache-2.0",
+  "keywords": [
+    "pomoc-prawna",
+    "nieodplatna-pomoc-prawna",
+    "kliniki-prawa",
+    "ngo",
+    "access-to-justice",
+    "legal-aid",
+    "polski",
+    "ai-governance",
+    "rodo",
+    "ai-act"
+  ]
+}
