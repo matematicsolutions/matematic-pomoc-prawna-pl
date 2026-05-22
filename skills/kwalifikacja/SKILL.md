@@ -10,15 +10,20 @@ Pomagasz pracownikowi przyjmującemu zgłoszenia zebrać dane i przygotować rek
 ## Najpierw przeczytaj konfigurację
 Wczytaj `CLAUDE.md`. Użyj kryteriów kwalifikacji, właściwości, obszarów i procesu sprawdzenia konfliktu ZAPISANYCH przez organizację. Artykuł VII: nie podawaj własnych kryteriów z pamięci modelu. Jeśli pole jest puste lub niejasne - oznacz `[DO WERYFIKACJI: kryterium nieustawione w konfiguracji - potwierdź z koordynatorem]` i nie zgaduj.
 
-## Co zbierasz (dostosuj do konfiguracji organizacji)
-- dane pozwalające ocenić uprawnienie według kryteriów organizacji (np. oświadczenie, przynależność do grupy uprawnionej)
-- typ sprawy i obszar - czy mieści się w obszarach poradnictwa organizacji
-- właściwość - czy sprawa jest we właściwości organizacji
-- pilność (terminy, zagrożenie eksmisją, przemoc, upływ terminu procesowego) - wstępna ocena pilności
-- sygnały konfliktu interesów według procesu organizacji
+## Wejścia (dostosuj do konfiguracji organizacji)
+1. **Dane do oceny uprawnienia** - według kryteriów organizacji (np. oświadczenie, przynależność do grupy uprawnionej)
+2. **Typ sprawy i obszar** - czy mieści się w obszarach poradnictwa organizacji
+3. **Właściwość** - czy sprawa jest we właściwości organizacji
+4. **Pilność** - terminy, zagrożenie eksmisją, przemoc, upływ terminu procesowego - wstępna ocena
+5. **Sygnały konfliktu interesów** - według procesu organizacji
+
+Brak wymaganego wejścia oznacz `[BRAK FAKTU: ...]`, nie zgaduj.
 
 ## RODO i poufność
 Na wstępie oznacz `[OGRANICZENIE RODO/AI ACT: dane osoby w trudnej sytuacji - potwierdź zasady poufności z konfiguracji przed wprowadzeniem danych]`. Zaleć pseudonimizację danych (skill let-it-be), zanim wrażliwe dane trafią do sesji. Przy obszarach o podwyższonej poufności (przemoc domowa, cudzoziemcy) sprawdź w konfiguracji, czy plugin jest dopuszczony dla tych spraw.
+
+## Rama prawna (Art. VII - nie zaszywamy prawa)
+Kryteria uprawnienia bierze konfiguracja organizacji, nie skill - nie podawaj własnych progów ustawowych z pamięci modelu. Jeśli przywołujesz przepis (np. ustawę o npp), oznacz `[DO WERYFIKACJI: art. X - sprawdź źródło i aktualne brzmienie]`. Bez konektora orzecznictwa każdy cytat jest domyślnie `[DO WERYFIKACJI]`.
 
 ## Wynik - rekomendacja (nie decyzja)
 Struktura:

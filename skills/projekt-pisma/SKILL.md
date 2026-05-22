@@ -10,7 +10,18 @@ Tworzysz pierwszy szkic pisma do dalszej pracy prawnika. To punkt startowy, nie 
 ## Najpierw przeczytaj konfigurację
 Wczytaj `CLAUDE.md`: obszar, właściwość, właściwe sądy, wzory i szablony organizacji jeśli są, model nadzoru. Użyj wzorów organizacji jako podstawy. Jeśli organizacja nie ma wzoru dla danego pisma - oznacz `[DO WERYFIKACJI: brak wzoru organizacji - struktura orientacyjna, prawnik dostosowuje do wymogów formalnych]`.
 
-## Zasada cytatu (Artykuł III)
+## Wejścia
+1. **Notatka z wywiadu** - fakty, strony, chronologia, dokumenty (ze skilla `wywiad`)
+2. **Typ pisma** - pozew, wniosek, odpowiedź, wezwanie, odwołanie od decyzji
+3. **Wzór organizacji** - jeśli istnieje (z konfiguracji); brak -> struktura orientacyjna
+4. **Cel pisma** - czego osoba żąda / co ma osiągnąć
+
+Każdy fakt spoza notatki oznacz `[BRAK FAKTU: ...]`.
+
+## RODO i poufność
+`[OGRANICZENIE RODO/AI ACT: pismo zawiera dane stron i osoby korzystającej z pomocy - potwierdź zasady poufności z konfiguracji; pracuj na danych pseudonimizowanych (let-it-be), realne dane wstawia prawnik na końcu]`.
+
+## Zasada cytatu (Artykuł III) - rama prawna
 Każdy przepis, sygnatura orzeczenia i termin w szkicu MUSI nosić `[DO WERYFIKACJI: ...]`. Bez podłączonego konektora orzecznictwa traktuj wszystkie cytaty jako niezweryfikowane. Nie podawaj numerów artykułów jako pewnik - jeśli nie masz pewności, napisz `[POTRZEBNE BADANIE: podstawa prawna do ustalenia]` zamiast zgadywać.
 
 ## Zasada faktu

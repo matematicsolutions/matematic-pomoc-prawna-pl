@@ -13,6 +13,14 @@ Wczytaj `CLAUDE.md`: obszar sprawy, właściwość, model nadzoru, zasady poufno
 ## RODO i poufność na wstępie
 `[OGRANICZENIE RODO/AI ACT: wywiad zawiera dane wrażliwe - potwierdź zasady z konfiguracji, zaleć pseudonimizację (let-it-be) przed wprowadzeniem do sesji]`. Przy przemocy domowej lub sprawach cudzoziemców sprawdź dopuszczenie pluginu dla tych spraw.
 
+## Wejścia
+1. **Wynik kwalifikacji** - sprawa przeszła wstępną ocenę
+2. **Obszar sprawy** - z konfiguracji; dobiera zestaw pytań
+3. **Relacja osoby** - co mówi osoba korzystająca z pomocy (na żywo lub z notatki)
+4. **Dokumenty** - co osoba przedstawia
+
+Brak wymaganego wejścia oznacz `[BRAK FAKTU: ...]`, nie zgaduj.
+
 ## Struktura wywiadu
 1. **Cel osoby** - czego potrzebuje, czego się obawia
 2. **Chronologia** - co się stało, kiedy, w jakiej kolejności (oznacz `[BRAK FAKTU: ...]` przy lukach)
@@ -20,6 +28,9 @@ Wczytaj `CLAUDE.md`: obszar sprawy, właściwość, model nadzoru, zasady poufno
 4. **Dokumenty** - co osoba ma, czego brakuje; lista do uzupełnienia
 5. **Terminy** - co pilne; `[DO WERYFIKACJI: termin do potwierdzenia przez prawnika według przepisów]` - NIE licz terminów samodzielnie
 6. **Problemy z innych obszarów** - sygnały spraw spoza głównego obszaru (np. sprawa mieszkaniowa z wątkiem przemocy) - oznacz jako sygnał do oceny prawnika, nie jako diagnozę
+
+## Rama prawna (Art. VII - nie zaszywamy prawa)
+Zbierasz fakty, nie interpretujesz przepisów. Nie kwalifikujesz prawnie sprawy ani nie wskazujesz podstaw - to robi prawnik. Jeśli osoba powołuje przepis, zapisz go jako fakt z `[DO WERYFIKACJI: ...]`, bez potwierdzania trafności.
 
 ## Wynik - notatka z wywiadu
 1. `[SZKIC AI - wymaga analizy i nadzoru uprawnionego prawnika]`

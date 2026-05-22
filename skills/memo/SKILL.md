@@ -12,6 +12,16 @@ IRAC to cztery elementy: Issue (problem), Rule (reguła), Application (zastosowa
 ## Najpierw przeczytaj konfigurację
 Wczytaj `CLAUDE.md`: obszar, właściwość, model nadzoru. Dobierz ramowanie do obszaru sprawy.
 
+## Wejścia
+1. **Stan faktyczny** - z notatki z wywiadu (wsad, nie element IRAC)
+2. **Problem do analizy** - pytanie prawne, jeśli już sformułowane; jeśli nie - pomożesz je ująć
+3. **Obszar sprawy** - z konfiguracji; dobiera ramowanie
+
+Luki w faktach oznacz `[BRAK FAKTU: ...]`.
+
+## RODO i poufność
+`[OGRANICZENIE RODO/AI ACT: stan faktyczny może zawierać dane wrażliwe - pracuj na danych pseudonimizowanych (let-it-be); analizę na realnych danych prowadzi prawnik]`.
+
 ## Struktura
 1. `[SZKIC AI - wymaga analizy i nadzoru uprawnionego prawnika]`
 2. **Stan faktyczny (wsad)** - z notatki z wywiadu; luki jako `[BRAK FAKTU: ...]`
