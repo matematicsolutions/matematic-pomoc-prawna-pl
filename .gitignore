@@ -4,3 +4,6 @@ Thumbs.db
 *.swp
 .vscode/
 .idea/
+
+# Claude Code local overrides (lokalne settings, nie commit)
+.claude/*.local.*

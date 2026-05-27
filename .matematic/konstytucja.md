@@ -48,7 +48,7 @@ Reguły prawne (kryteria kwalifikacji, terminy, wzory pism) NIE są zaszyte w sk
 ## Zarządzanie projektem
 
 - **Właściciel:** Wiesław Mazur
-- **Recenzenci:** marko-pl (treść skilli i README), security-review (kod, `.mcp.json`)
+- **Recenzenci:** wewnętrzny review treści (skille i README), security-review (kod, `.mcp.json`)
 - **Licencja:** Apache 2.0 (zgodna z licencjami obu wzorów: anthropics/claude-for-legal, lawdroidAI/legal-aid-plugin)
 - **Proces zmiany:** zmiana konstytucji wymaga akceptacji Właściciela; SEMVER + wpis w `## Zmiany`
 
