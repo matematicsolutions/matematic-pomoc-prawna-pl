@@ -1,6 +1,6 @@
 ---
 name: memo
-description: Dla punktów nieodpłatnej pomocy prawnej, klinik prawa, fundacji i NGO. Szkielet analizy sprawy w schemacie IRAC (problem - reguła - zastosowanie - wniosek), poprzedzonym stanem faktycznym jako wsadem. Buduje SZKIELET: miejsca na reguły oznacza jako luki badawcze, zastosowanie i wniosek zostawia puste do wypełnienia przez prawnika. NIE pisze analizy za prawnika - daje uporządkowaną ramę. Trigger - "memo", "analiza sprawy", "IRAC", "szkielet analizy", "rama do opinii".
+description: Dla punktów nieodpłatnej pomocy prawnej, klinik prawa, fundacji i NGO. Szkielet analizy sprawy w schemacie IRAC (problem - reguła - zastosowanie - wniosek), poprzedzonym stanem faktycznym jako wsadem. Buduje SZKIELET - miejsca na reguły oznacza jako luki badawcze, zastosowanie i wniosek zostawia puste do wypełnienia przez prawnika. NIE pisze analizy za prawnika - daje uporządkowaną ramę. Trigger - "memo", "analiza sprawy", "IRAC", "szkielet analizy", "rama do opinii".
 ---
 
 # Memo (szkielet IRAC)
