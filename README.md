@@ -37,7 +37,7 @@ Plugin jest zbudowany wokół nadzoru i weryfikacji, nie wokół automatyzacji.
 - **Markery pewności** w treści (`[DO WERYFIKACJI]`, `[NIEPEWNE]`, `[POTRZEBNE BADANIE]`, `[ANALIZA PRAWNIKA]`, `[BRAK FAKTU]`, `[OGRANICZENIE RODO/AI ACT]`). Zasada: ufaj flagom bardziej niż ich brakowi.
 - **Trzy modele nadzoru** (do wyboru przy konfiguracji): formalna kolejka / konfigurowalne flagi / lżejszy nadzór.
 - **Skille nie zaszywają prawa** - czytają konfigurację organizacji, nie reguły wbudowane w kod. Chroni przed błędem przy zmianie przepisów.
-- **Ślad audytowy** zgodny z AI Act art. 12 (record-keeping).
+- **Ślad audytowy** wzorowany na rejestrowaniu zdarzeń z AI Act art. 12.
 
 ## Start
 
